@@ -287,19 +287,19 @@ HOME_TEMPLATE = Template("""
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>EduLink – Your Learning Hub</title>
+    <title>Crop Yield Predictor – Your Learning Hub</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>""" + BASE_STYLE + """</style>
 </head>
 <body>
     <header>
-        <h1>EduLink</h1>
+        <h1>Crop Yield Predictor</h1>
         <p>Your centralized platform for notes, resources, and collaboration.</p>
     </header>
 
     <main>
         <section class="features">
-            <h2>What EduLink offers</h2>
+            <h2>What Crop Yield Predictor offers</h2>
             <ul>
                 <li>Organized course notes and summaries</li>
                 <li>Shared resources and links for each subject</li>
@@ -327,7 +327,7 @@ HOME_TEMPLATE = Template("""
     </main>
 
     <footer>
-        <p>&copy; 2026 EduLink. Built with Python &amp; FastAPI.</p>
+        <p>&copy; 2026 Crop Yield Predictor. Built with Python &amp; FastAPI.</p>
     </footer>
 </body>
 </html>
@@ -338,7 +338,7 @@ CROP_YIELD_TEMPLATE = Template("""
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>EduLink – Crop Yield Predictor</title>
+    <title>Crop Yield Predictor – Crop Yield Predictor</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>""" + BASE_STYLE + """</style>
 </head>
@@ -444,12 +444,12 @@ CROP_YIELD_TEMPLATE = Template("""
 
         <section>
             <h2>Navigation</h2>
-            <a href="/" class="button">Back to EduLink</a>
+            <a href="/" class="button">Back to Crop Yield Predictor</a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 EduLink. Built with Python &amp; FastAPI.</p>
+        <p>&copy; 2026 Crop Yield Predictor. Built with Python &amp; FastAPI.</p>
     </footer>
 </body>
 </html>
