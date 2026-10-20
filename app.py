@@ -114,38 +114,52 @@ def train_model():
         return w, b, history
 
     def momentum_gradient_descent(
-        X,
-        y,
-        lr=0.05,
-        momentum=0.9,
-        epochs=3000
-    ):
-        w = np.zeros(X.shape[1])
-        b = 0.0
+    X,
+    y,
+    lr=0.05,
+    momentum_factor=0.9,
+    epochs=3000
+):
+    """
+    Momentum-based batch gradient descent.
 
-        velocity_w = np.zeros_like(w)
-        velocity_b = 0.0
+    Velocity update:
+    V_T = V_(T-1) + (1 - momentum_factor) * gradient
 
-        history = []
+    Parameter update:
+    parameter_new = parameter_old - learning_rate * V_T
+    """
+    w = np.zeros(X.shape[1])
+    b = 0.0
 
-        for _ in range(epochs):
-            dw, db = gradients(X, y, w, b)
+    velocity_w = np.zeros_like(w)
+    velocity_b = 0.0
 
-            velocity_w = momentum * velocity_w - lr * dw
-            velocity_b = momentum * velocity_b - lr * db
+    history = []
 
-            w += velocity_w
-            b += velocity_b
+    for _ in range(epochs):
+        dw, db = gradients(X, y, w, b)
 
-            history.append(mse_loss(X, y, w, b))
+        # Velocity / momentum calculation
+        velocity_w = velocity_w + (1 - momentum_factor) * dw
+        velocity_b = velocity_b + (1 - momentum_factor) * db
 
-        return w, b, history
+        # Parameter update
+        w = w - lr * velocity_w
+        b = b - lr * velocity_b
+
+        history.append(mse_loss(X, y, w, b))
+
+    return w, b, history
 
     gd_w, gd_b, gd_history = gradient_descent(X_train_scaled, y_train)
     momentum_w, momentum_b, momentum_history = momentum_gradient_descent(
-        X_train_scaled,
-        y_train
-    )
+    X_train_scaled,
+    y_train,
+    lr=0.05,
+    momentum_factor=0.9,
+    epochs=3000
+)
 
     gd_train_mse = mse_loss(X_train_scaled, y_train, gd_w, gd_b)
     momentum_train_mse = mse_loss(
