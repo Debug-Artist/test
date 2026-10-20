@@ -473,13 +473,13 @@ HOME_TEMPLATE = Template("""
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>EduLink – Your Learning Hub</title>
+    <title>Crop Yield Predictor – Your Learning Hub</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>""" + BASE_STYLE + """</style>
 </head>
 <body>
     <header>
-        <h1>EduLink</h1>
+        <h1>Crop Yield Predictor</h1>
         <p>Your centralized platform for notes, resources, and intelligent learning tools.</p>
     </header>
 
@@ -509,7 +509,7 @@ HOME_TEMPLATE = Template("""
         </section>
 
         <section>
-            <span class="badge badge-green">What EduLink Offers</span>
+            <span class="badge badge-green">What Crop Yield Predictor Offers</span>
             <h2 class="green-heading">Learning Resources</h2>
             <ul>
                 <li>Organized course notes and summaries</li>
@@ -530,7 +530,7 @@ HOME_TEMPLATE = Template("""
     </main>
 
     <footer>
-        <p>&copy; 2026 EduLink. Built with Python, FastAPI &amp; Momentum Optimization.</p>
+        <p>&copy; 2026 Crop Yield Predictor. Built with Python, FastAPI &amp; Momentum Optimization.</p>
     </footer>
 </body>
 </html>
@@ -541,7 +541,7 @@ CROP_YIELD_TEMPLATE = Template("""
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>EduLink – Crop Yield Predictor</title>
+    <title>Crop Yield Predictor – Crop Yield Predictor</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>""" + BASE_STYLE + """</style>
 </head>
@@ -621,12 +621,12 @@ CROP_YIELD_TEMPLATE = Template("""
             <a href="/integration" class="button button-purple">
                 View Integration & Results
             </a>
-            <a href="/" class="button">Back to EduLink</a>
+            <a href="/" class="button">Back to Crop Yield Predictor</a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 EduLink. Built with Python, FastAPI &amp; Momentum Optimization.</p>
+        <p>&copy; 2026 Crop Yield Predictor. Built with Python, FastAPI &amp; Momentum Optimization.</p>
     </footer>
 </body>
 </html>
@@ -637,7 +637,7 @@ INTEGRATION_TEMPLATE = Template("""
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>EduLink – Momentum Optimization Integration</title>
+    <title>Crop Yield Predictor – Momentum Optimization Integration</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>""" + BASE_STYLE + """</style>
 </head>
@@ -828,12 +828,12 @@ b = b + velocity_b
         <section>
             <h2 class="blue-heading">Navigation</h2>
             <a href="/crop-yield" class="button">Open Crop Yield Predictor</a>
-            <a href="/" class="button button-green">Back to EduLink</a>
+            <a href="/" class="button button-green">Back to Crop Yield Predictor</a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 EduLink. Built with Python, FastAPI &amp; Momentum Optimization.</p>
+        <p>&copy; 2026 Crop Yield Predictor. Built with Python, FastAPI &amp; Momentum Optimization.</p>
     </footer>
 </body>
 </html>
